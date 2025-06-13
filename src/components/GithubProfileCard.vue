@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useGithubProfile } from '@/composables/useGithubProfile.ts';
 
-const props = defineProps<{
-  username: string;
-}>();
+type Prop = {
+    username: string;
+}
+
+const props = defineProps<Prop>();
 
 const { username: name, profile, error } = useGithubProfile()
 
