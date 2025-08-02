@@ -5,11 +5,11 @@ type Prop = {
     username: string;
 }
 
-const props = defineProps<Prop>();
+const { username = 'railsstudent' } = defineProps<Prop>();
 
 const { username: name, profile, error } = useGithubProfile()
 
-name.value = props.username
+name.value = username
 
 </script>
 
