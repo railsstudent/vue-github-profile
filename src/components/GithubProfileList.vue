@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import GithubProfileCard from './GithubProfileCard.vue'
 
-const usernames = ['railsstudent', 'danielkellyio', 'hootlex', 'MooseSaeed']
+const usernames = ['johnsoncodehk', 'antfu', 'railsstudent', 'danielkellyio', 'hootlex', 'MooseSaeed']
 </script>
 
 <template>

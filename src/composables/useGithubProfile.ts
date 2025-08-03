@@ -1,6 +1,7 @@
 import { watch, ref } from 'vue';
 
 export type GithubProfile = {
+    login: string;
     name: string;
     followers: number;
     following: number;

@@ -16,7 +16,7 @@ name.value = username
 <template>
     <div v-if="profile">
         <img :src="profile.avatar_url" :alt="profile.name" class="avatar" />
-        <p>Username: {{ username }}</p>
+        <p>Username: {{ profile.login }}</p>
         <p>Name: {{ profile.name }}</p>
         <p>Bio: {{ profile.bio || 'N/A' }}</p>
         <p>Followers: {{ profile.followers }}</p>
