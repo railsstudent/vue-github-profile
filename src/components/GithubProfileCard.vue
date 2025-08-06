@@ -14,10 +14,10 @@ name.value = username
 
 <template>
   <div class="card card-side bg-base-100 shadow-sm" v-if="profile">
-    <figure class="basis-[50%] grow shrink">
+    <figure class="basis-[30%] grow shrink">
       <img :src="profile.avatar_url" :alt="profile.name" />
     </figure>
-    <div class="card-body basis-[50%] grow shrink">
+    <div class="card-body basis-[70%] grow shrink">
       <h2 class="card-title">{{ profile.login }}</h2>
       <p>Name: {{ profile.name }}</p>
       <p>Bio: {{ profile.bio || 'N/A' }}</p>
