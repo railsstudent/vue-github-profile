@@ -12,5 +12,7 @@ const usernames = [
 </script>
 
 <template>
-  <GithubProfileList :usernames="usernames" />
+  <div class="grid grid-cols-2 pt-0 pb-0 pl-[2rem] pr-[2rem]">
+    <GithubProfileList :usernames="usernames" />
+  </div>
 </template>
