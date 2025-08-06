@@ -1,19 +1,12 @@
 <script setup lang="ts">
 import GithubProfileCard from './GithubProfileCard.vue'
 
-const usernames = [
-  'johnsoncodehk',
-  'antfu',
-  'railsstudent',
-  'danielkellyio',
-  'hootlex',
-  'MooseSaeed',
-]
+const { usernames } = defineProps<{ usernames: string[] }>()
 </script>
 
 <template>
   <div class="header">
-    <h1>Github Profile List</h1>
+    <h1>Github Profile List (Vue 3 Ver.)</h1>
   </div>
   <GithubProfileCard v-for="username in usernames" :key="username" :username="username" />
 </template>
