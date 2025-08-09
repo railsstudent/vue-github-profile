@@ -13,8 +13,8 @@ permissions:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
     environment: github-pages   # Specify the deployment environment here
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
